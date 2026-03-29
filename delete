@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Silme Talebi - Uygulama Adın</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f7f6; }
+        .container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #e74c3c; border-bottom: 2px solid #f2f2f2; padding-bottom: 10px; }
+        p { margin-bottom: 20px; font-size: 15px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="email"], input[type="text"], textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button { background-color: #e74c3c; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; width: 100%; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #c0392b; }
+        .footer { margin-top: 30px; font-size: 12px; text-align: center; color: #888; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hesap Silme Talebi</h2>
+    <p>Hesabınızı ve hesabınıza bağlı tüm verileri (profil bilgileri, mesajlar, satın alınan coinler) kalıcı olarak silmek istiyorsanız lütfen aşağıdaki formu doldurun.</p>
+    
+    <form action="https://formspree.io/f/xbdpgbgb" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Kullanıcı Adınız / Adınız Soyadınız:</label>
+            <input type="text" id="name" name="name" required placeholder="Uygulamadaki isminiz">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Kayıtlı E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required placeholder="ornek@mail.com">
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Silme Nedeni (İsteğe bağlı):</label>
+            <textarea id="reason" name="reason" rows="3" placeholder="Size daha iyi hizmet verebilmemiz için nedeninizi paylaşabilirsiniz."></textarea>
+        </div>
+
+        <p style="font-size: 13px; color: #666;">* Not: Silme işlemi onaylandıktan sonra verileriniz geri getirilemez şekilde 7 iş günü içerisinde sunucularımızdan temizlenecektir.</p>
+        
+        <button type="submit">Hesabımı ve Verilerimi Sil</button>
+    </form>
+</div>
+
+<div class="footer">
+    &copy; 2026 Uygulama Adın - Tüm Hakları Saklıdır.
+</div>
+
+</body>
+</html>
